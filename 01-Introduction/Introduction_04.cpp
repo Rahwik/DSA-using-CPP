@@ -1,12 +1,12 @@
-//Analysis of Common loops
-#include<iostream>
+// Analysis of Common loops
+#include <iostream>
 using namespace std;
 int main()
 {
-    int n,c;
-    for(int i=n;i>0;i=i-c)
+    int n, c;
+    for (int i = n; i > 0; i = i - c)
     {
-        //Some Θ(1) work
+        // Some Θ(1) work
     }
 }
 /*
