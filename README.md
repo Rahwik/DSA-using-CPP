@@ -49,3 +49,31 @@ Comparison of Terms
 The order of growth from smaller to larger:
 
 `c < loglogn < logn < n1/3 < n1/2 < n < n2 < n3 < 2n`
+
+
+
+Mathematics :
+--------------------
+
+Mathematics is a vast field encompassing various branches, each serving different purposes in problem-solving and understanding the nature of relationships and patterns. Here, we'll touch upon Arithmetic and Geometric Progressions, Quadratic Equations, and basics of Permutation and Combination And Many more in this Section.
+
+### Arithmetic Progression (AP) and Geometric Progression (GP):
+
+*   **AP (Arithmetic Progression):** A sequence where each term is obtained by adding a constant difference to the previous term. For example, 2, 4, 6, 8, ... with a common difference (d) of 2.
+*   **GP (Geometric Progression):** A sequence where each term is obtained by multiplying the previous term by a constant ratio. For example, 2, 4, 8, 16, ... with a common ratio (r) of 2.
+
+### Quadratic Equations:
+
+*   A quadratic equation is in the form \\(ax^2 + bx + c = 0\\).
+*   The discriminant (\\(D = b^2 - 4ac\\)) determines the nature of roots:
+    *   **D < 0:** Imaginary roots.
+    *   **D = 0:** Two equal real roots.
+    *   **D > 0:** Two distinct real roots.
+*   The quadratic formula is used to find the roots: \\(x = \\frac{-b \\pm \\sqrt{D}}{2a}\\).
+
+### Permutation and Combination Basics:
+
+*   **Permutation (nPr):** Arrangement of r items out of n, denoted by \\(nPr = \\frac{n!}{(n-r)!}\\). It represents the number of ways to arrange a subset of items.
+*   **Combination (nCr):** Selection of r items out of n, denoted by \\(nCr = \\frac{n!}{r!(n-r)!}\\). It represents the number of ways to select a subset of items without considering the arrangement.
+
+In summary, these mathematical concepts play crucial roles in various fields, from pure mathematics to applications in physics, engineering, and computer science. They provide tools for analyzing patterns, solving real-world problems, and understanding the fundamental structures underlying diverse phenomena.
