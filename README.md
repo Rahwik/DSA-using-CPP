@@ -76,4 +76,21 @@ Mathematics is a vast field encompassing various branches, each serving differen
 *   **Permutation (nPr):** Arrangement of r items out of n, denoted by \\(nPr = \\frac{n!}{(n-r)!}\\). It represents the number of ways to arrange a subset of items.
 *   **Combination (nCr):** Selection of r items out of n, denoted by \\(nCr = \\frac{n!}{r!(n-r)!}\\). It represents the number of ways to select a subset of items without considering the arrangement.
 
+Understanding Bitwise Operators
+===============================
+
+Bitwise operators are used in programming to perform operations at the bit level. They work with the binary representation of numbers.
+
+Types of Bitwise Operators
+--------------------------
+
+*   `&` - AND
+*   `|` - OR
+*   `^` - XOR (Exclusive OR)
+*   `~` - NOT
+*   `<<` - Left Shift
+*   `>>` - Right Shift
+
+
+
 In summary, these mathematical concepts play crucial roles in various fields, from pure mathematics to applications in physics, engineering, and computer science. They provide tools for analyzing patterns, solving real-world problems, and understanding the fundamental structures underlying diverse phenomena.
