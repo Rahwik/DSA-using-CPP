@@ -2,7 +2,7 @@ Data Structures and Algorithms in C++
 =====================================
 
 Introduction to DSA
--------------------
+====================
 
 Data Structures and Algorithms are fundamental concepts in computer science.
 
@@ -76,6 +76,8 @@ Mathematics is a vast field encompassing various branches, each serving differen
 *   **Permutation (nPr):** Arrangement of r items out of n, denoted by \\(nPr = \\frac{n!}{(n-r)!}\\). It represents the number of ways to arrange a subset of items.
 *   **Combination (nCr):** Selection of r items out of n, denoted by \\(nCr = \\frac{n!}{r!(n-r)!}\\). It represents the number of ways to select a subset of items without considering the arrangement.
 
+In summary, these mathematical concepts play crucial roles in various fields, from pure mathematics to applications in physics, engineering, and computer science. They provide tools for analyzing patterns, solving real-world problems, and understanding the fundamental structures underlying diverse phenomena.
+
 Understanding Bitwise Operators
 ===============================
 
@@ -91,6 +93,3 @@ Types of Bitwise Operators
 *   `<<` - Left Shift
 *   `>>` - Right Shift
 
-
-
-In summary, these mathematical concepts play crucial roles in various fields, from pure mathematics to applications in physics, engineering, and computer science. They provide tools for analyzing patterns, solving real-world problems, and understanding the fundamental structures underlying diverse phenomena.
