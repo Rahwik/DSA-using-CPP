@@ -98,4 +98,4 @@ Recursion
 
 Recursion is a programming concept where a function calls itself in its own definition. In C++, recursion is a powerful technique that allows a function to solve a problem by breaking it down into smaller instances of the same problem.
 
-Factorial using Recursion, Tail recursion, Sum of Digits, Rope cutting Problem, Generate Subsets, Tower of Hanoi, Josephus Problem,printing all permutations.
+Factorial using Recursion, Tail recursion, Sum of Digits, Rope cutting Problem, Generate Subsets, Tower of Hanoi, Josephus Problem,printing all permutations, sum of all subsets.
