@@ -1,0 +1,31 @@
+
+*Array in C++
+-----------------------------------------------------
+-Advantages of arrays:
+-----------------------------------------------------
+~Fixed size: Arrays have a fixed size, which can be
+an advantage in scenarios where a constant and known
+size of data storage is required.
+~Direct Memory Access: Arrays provide direct memory 
+access to elements. This can be beneficial in 
+situations where low-level manipulation of memory is 
+necessary.
+~Sequential Access: Elements in an array are stored 
+sequentially in memory, which allows for efficient 
+sequential access to elements.
+~Simplicity: Arrays are simple and straightforward 
+data structures, making them easy to understand and 
+use.
+-----------------------------------------------------
+*Vector in C++
+-----------------------------------------------------
+-Advantages of vectors:
+-----------------------------------------------------
+~Dynamic size
+~Rich Library functions find, erase, insert, etc.
+~Easy to know size
+~No need to pass size
+~Can be returned from a functions
+~by default intialized with  default values
+~We can copy a vector to Another
+-----------------------------------------------------
