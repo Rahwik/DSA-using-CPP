@@ -99,3 +99,12 @@ Recursion
 Recursion is a programming concept where a function calls itself in its own definition. In C++, recursion is a powerful technique that allows a function to solve a problem by breaking it down into smaller instances of the same problem.
 
 Factorial using Recursion, Tail recursion, Sum of Digits, Rope cutting Problem, Generate Subsets, Tower of Hanoi, Josephus Problem,printing all permutations, sum of all subsets.
+
+
+Array
+================
+
+
+In C++, an array is a data structure that allows you to store a fixed-size sequential collection of elements of the same type. Each element in the array is identified by an index or a key.
+
+Insert Element , Delete Element , Second largest , Check if array is Sorted , Remove Duplicates From a Sorted Array.
