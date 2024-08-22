@@ -1,0 +1,68 @@
+1.Order of Growth:
+
+Function f(n) is said to be growing faster than g(n) if:
+
+ lim   f(n)/g(n) = ∞
+ n->∞ 
+ OR
+ lim   g(n)/f(n) = 0
+ n->∞ 
+
+ A fast growing function is unpreferable
+
+Suppose, f(n) = n^2 + n +6
+         g(n) = 2n + 5
+
+        lim   2n+5/n^2 + n +6 
+        n->∞ 
+
+        lim   (5/n^2)/(1 +6/n^2) 
+        n->∞ 
+
+        lim   0 + 0/ 1 + 0 + 0 
+        n->∞ 
+
+              = 0 , So the function f(n) is growing fast.
+
+* Direct Way to reduce Order of Growth
+
+-Ignore Lower order terms.
+-Ignore Leading constant              
+
+*How we know which term are lower oerder?
+
+-c < loglogn < logn < n^1/3 < n^1/2 < n < n^2 < n^3 < n^n
+
+
+2.Asysptotic Notations
+
+-Big O: Represnts exact bound or upper bound.
+-Thetha: Represnts exact bound.
+-Omega: Represnts exact or lower bound.
+
+-Asysptotic Notations are mathemathical tools to Represnt hte time complexity of algorithms for Asysptotic analysis.
+
+* Big O Notations (Upper Bound)
+-we say f(n)=O(g(n)) if there exist constants C and n' such that f(n)<=Cg(n) for n>=n'
+
+{n/4 , 2n+3 , n/100 , logn , 1000 , n/10000 , 100 , .....}Σ O(n)
+
+{n^2+n , 2n^2 , n^2 + 1000n , n^2 , 2logn , n^2/1000 , .....}Σ O(n^2)
+
+{1000 , 2 , 1 , 3 , 10000 , 100000000000000 , .......}Σ O(1)
+
+
+* Omega Notation (Lower Bound)
+-As the sequence contains terms that are at least a constant, the sequence belongs to Ω(1)
+
+{n/4 , n/2 ,2n , 3n , 2n+3 , n^2 , .........}ΣΩ(n)
+
+{if f(n) = Ωg(n), then g(n) = O(f(n))}
+
+Omega Notation is useful when we have lower bound on time complexity.
+
+
+* Thetha Notations(Exact order of Growth)
+
+{ n^2/4 , n^2/2 , ............2n^2 , 2n^2 + 1000n , 4n^2 + 2nlogn + 20 , ........}Σ θ(n^2)
+

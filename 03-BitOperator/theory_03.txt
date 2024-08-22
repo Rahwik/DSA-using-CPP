@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 -Bitwise And
 x=3
 y=6
@@ -40,4 +41,48 @@ Bitwise Right shift >>
      x: 00..01000001
 (x>>1): 00...0010000
 (x>>2): 00....000100
+=======
+-Bitwise And
+x=3
+y=6
+
+Binary Representaion:
+  
+    x: 00......0011
+    y: 00......0110
+(x&y): 00......0010
+
+-Bitwise OR
+x=3
+y=6
+
+Binary Representaion:
+  
+    x: 00......0011
+    y: 00......0110
+(x|y): 00......0111
+
+-Bitwise XOR
+x=3
+y=6
+
+Binary Representaion:
+  
+    x: 00......0011
+    y: 00......0110
+(x^y): 00......0101
+
+-Bitwise Left shift <<
+
+     x: 00......0011
+(x<<1): 00.......110
+(x<<2): 00......1100
+(x<<y): 00...1100000
+
+Bitwise Right shift >>
+
+     x: 00..01000001
+(x>>1): 00...0010000
+(x>>2): 00....000100
+>>>>>>> origin/main
 (x>>y): 00...0000010
