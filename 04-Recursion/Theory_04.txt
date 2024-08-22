@@ -1,0 +1,50 @@
+A function calling itself directly or indirectly is called recursion.
+
+
+(Direct Method)
+void fun1()
+{
+    .........
+    .........
+    fun1();
+    .........
+    .........
+}
+
+(Indirect method)
+void fun1()
+{
+    .........
+    .........
+    fun2();
+    .........
+    .........
+}
+void fun2()
+{
+    .........
+    .........
+    fun1();
+    .........
+    .........
+}
+
+-Application of Recursion.
+
+1.Many Algorithm technologiesare based on Recursion:
+
+*Dynamic Programming
+*BackTracking
+*Divide and Conquer(Binary Search, Quick Sort, Merge Sort)
+
+2.Many problems inherently recursive:
+
+*Tower Hanoi
+*DFS based traversals(DFS of graph and Inorder/Preorder/Postorder Traversal of tree)
+
+-Tail recursion:
+
+Tail recursion is a special form of recursion where the recursive call is the last operation in the function.
+This means that there are no pending operations to be performed after the recursive call returns.
+Tail recursion is important because it allows some compilers to optimize the recursive function calls,
+reducing the risk of stack overflow and improving performance.
