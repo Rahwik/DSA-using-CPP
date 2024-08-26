@@ -1,0 +1,1 @@
+  // friend void display(node *head);
