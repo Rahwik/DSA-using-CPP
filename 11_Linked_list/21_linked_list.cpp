@@ -29,7 +29,7 @@ node *deletekth(node *head, int k)
     node *curr = head;
     for (int i = 0; i < k - 2; i++)
     {
-        if (curr->next == head) // check if the list has less than k nodes
+        if (curr->next == head)
             return head;
         curr = curr->next;
     }
