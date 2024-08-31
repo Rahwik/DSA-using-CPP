@@ -1,19 +1,8 @@
 // Ceiling on left side
 #include <iostream>
 #include <climits>
+#include<set>
 using namespace std;
-
-class node
-{
-public:
-    int key;
-    node *left, *right;
-    node(int x)
-    {
-        key = x;
-        left = right = nullptr;
-    }
-};
 
 // Naive approach
 void printceil(int arr[], int n)
