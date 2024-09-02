@@ -45,44 +45,54 @@ public:
     }
 };
 
-void insertNode(Node *&root, int value)
+void rotateLeft(Node *&root, Node *node)
 {
-
-    Node *newNode = new Node(value);
-
-    if (root == nullptr)
+    Node *temp = node->right;
+    node->right = temp->left;
+    if (temp->left != nullptr)
     {
-        root = newNode;
-        root->color = BLACK;
-        return;
+        temp->left->parent = node;
     }
-
-    Node *current = root;
-    while (true)
+    temp->parent = node->parent;
+    if (node->parent == nullptr)
     {
-        if (value < current->value)
-        {
-            if (current->left == nullptr)
-            {
-                current->left = newNode;
-                newNode->parent = current;
-                break;
-            }
-            current = current->left;
-        }
-        else
-        {
-            if (current->right == nullptr)
-            {
-                current->right = newNode;
-                newNode->parent = current;
-                break;
-            }
-            current = current->right;
-        }
+        root = temp;
     }
+    else if (node == node->parent->left)
+    {
+        node->parent->left = temp;
+    }
+    else
+    {
+        node->parent->right = temp;
+    }
+    temp->left = node;
+    node->parent = temp;
+}
 
-    balanceTree(root, newNode);
+void rotateRight(Node *&root, Node *node)
+{
+    Node *temp = node->left;
+    node->left = temp->right;
+    if (temp->right != nullptr)
+    {
+        temp->right->parent = node;
+    }
+    temp->parent = node->parent;
+    if (node->parent == nullptr)
+    {
+        root = temp;
+    }
+    else if (node == node->parent->right)
+    {
+        node->parent->right = temp;
+    }
+    else
+    {
+        node->parent->left = temp;
+    }
+    temp->right = node;
+    node->parent = temp;
 }
 
 void balanceTree(Node *&root, Node *node)
@@ -138,54 +148,44 @@ void balanceTree(Node *&root, Node *node)
     root->color = BLACK;
 }
 
-void rotateLeft(Node *&root, Node *node)
+void insertNode(Node *&root, int value)
 {
-    Node *temp = node->right;
-    node->right = temp->left;
-    if (temp->left != nullptr)
-    {
-        temp->left->parent = node;
-    }
-    temp->parent = node->parent;
-    if (node->parent == nullptr)
-    {
-        root = temp;
-    }
-    else if (node == node->parent->left)
-    {
-        node->parent->left = temp;
-    }
-    else
-    {
-        node->parent->right = temp;
-    }
-    temp->left = node;
-    node->parent = temp;
-}
 
-void rotateRight(Node *&root, Node *node)
-{
-    Node *temp = node->left;
-    node->left = temp->right;
-    if (temp->right != nullptr)
+    Node *newNode = new Node(value);
+
+    if (root == nullptr)
     {
-        temp->right->parent = node;
+        root = newNode;
+        root->color = BLACK;
+        return;
     }
-    temp->parent = node->parent;
-    if (node->parent == nullptr)
+
+    Node *current = root;
+    while (true)
     {
-        root = temp;
+        if (value < current->value)
+        {
+            if (current->left == nullptr)
+            {
+                current->left = newNode;
+                newNode->parent = current;
+                break;
+            }
+            current = current->left;
+        }
+        else
+        {
+            if (current->right == nullptr)
+            {
+                current->right = newNode;
+                newNode->parent = current;
+                break;
+            }
+            current = current->right;
+        }
     }
-    else if (node == node->parent->right)
-    {
-        node->parent->right = temp;
-    }
-    else
-    {
-        node->parent->left = temp;
-    }
-    temp->right = node;
-    node->parent = temp;
+
+    balanceTree(root, newNode);
 }
 
 void printTree(Node *root)
